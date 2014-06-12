@@ -38,35 +38,23 @@
 
         $(document).ready(function() {
 
-            var SmsPlugin = function () {};
-
-            SmsPlugin.prototype.send = function (phone, message, method, successCallback, failureCallback) {
-                return PhoneGap.exec(successCallback, failureCallback, 'SmsPlugin', "SendSMS", [phone, message, method]);
-            };
-
-            PhoneGap.addConstructor(function() {
-                PhoneGap.addPlugin("sms", new SmsPlugin());
-            });
-
-
             $("#btnTestSMS").click(function(){
                 alert('click!');
                 var number = '0673364509';//$("#numberTxt").val();
                 var message = 'test message from phonegap app';//$("#messageTxt").val();
-                //var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
-                /*smsplugin.send(number,message,function () {
+                window.plugins.sms.send(number,message,function () {
                     alert('Message sent successfully');
                 },function (e) {
                     alert('Message Failed:' + e);
-                });*/
-                SmsPlugin.prototype.send(number, message, '',
+                });
+                /*SmsPlugin.prototype.send(number, message, '',
                         function () {
                             alert('Message sent successfully');
                         },
                         function (e) {
                             alert('Message Failed:' + e);
                         }
-                );
+                );*/
             });
         });
 
