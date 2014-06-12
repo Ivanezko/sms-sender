@@ -125,6 +125,6 @@
 
 
     <!-- Third party plugins -->
-    <gap:plugin name="info.asankan.phonegap.smsplugin" version="0.1.0" />
+    <gap:plugin name="org.apache.cordova.plugin.SmsPlugin" />
 
 </widget>
