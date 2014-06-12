@@ -125,6 +125,6 @@
 
 
     <!-- Third party plugins -->
-    <gap:plugin name="info.asankan.phonegap.smsplugin" />
+    <!--<gap:plugin name="info.asankan.phonegap.smsplugin" />-->
 
 </widget>
