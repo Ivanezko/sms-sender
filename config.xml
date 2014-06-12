@@ -95,7 +95,7 @@
         <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>-->
 
-   <!-- <feature name="SmsPlugin">
+<!--    <feature name="SmsPlugin">
         <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
     </feature>-->
 
@@ -125,6 +125,6 @@
 
 
     <!-- Third party plugins -->
-    <!--<gap:plugin name="org.apache.cordova.plugin.SmsPlugin" />-->
+    <gap:plugin name="info.asankan.phonegap.smsplugin" />
 
 </widget>
