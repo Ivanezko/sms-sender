@@ -95,9 +95,9 @@
         <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>-->
 
-<!--    <feature name="SmsPlugin">
+    <feature name="SmsPlugin">
         <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
-    </feature>-->
+    </feature>
 
 
 
