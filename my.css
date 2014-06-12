@@ -1,0 +1,31 @@
+/* Put your custom CSS here */
+
+.gn-submit  .ui-btn-text {
+    font-size:34px;
+}
+
+.gn-inputtext {
+    /*text-align: center;*/
+    /*font-size:34px;*/
+}
+
+.ui-input-text {
+    margin: 0 !important;
+}
+
+.log-data {
+    font-weight: 700;
+}
+
+.gn-falstart .ui-slider {
+    width:100% !important;
+}
+
+.gnFalstart {
+    display:none;
+}
+
+.gn-pname {
+    width:100%;
+    text-align: center;
+}

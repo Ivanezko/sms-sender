@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title></title>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <link rel="stylesheet" href="libs/jquery.mobile-1.3.1.min.css" />
+    <link rel="stylesheet" href="my.css" />
+    <script src="libs/jquery.js"></script>
+    <script src="libs/jquery.mobile.js"></script>
+    <script src="libs/smsplugin.js"></script>
+
+    <!--<script src="http://jsconsole.com/remote.js?27D6E36C-D030-48C9-831A-5A53F8FEE3D0"></script>-->
+    <!--<script src="http://debug.phonegap.com/target/target-script-min.js#fgfyugyeuegf66eewui77373YYhh"></script>-->
+
+    <!--<script src="my.js"></script>-->
+    <!-- User-generated css -->
+    <style>
+    </style>
+    <!-- User-generated js -->
+    <script>
+        try {
+
+            $(function() {
+
+            });
+
+        } catch (error) {
+            console.error("Your javascript has an error: " + error);
+        }
+
+        $(document).ready(function() {
+            //leave empty for sending sms using default intent
+            $("#btnTestSMS").click(function(){
+
+                var number = '0673364509';//$("#numberTxt").val();
+                var message = 'test message from phonegap app';//$("#messageTxt").val();
+                SmsPlugin.prototype.send(number, message, '',
+                        function () {
+                            alert('Message sent successfully');
+                        },
+                        function (e) {
+                            alert('Message Failed:' + e);
+                        }
+                );
+            });
+        });
+
+
+
+    </script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="mainPage" data-theme="a">
+    <div data-role="header">
+        <!--<a id="gnSettings" data-role="button" href="#settingsPage" class="ui-btn-right gn-clear">настройки</a>-->
+        <!--<a id="gnHistory" data-role="button" target="_blank" href="#historyPage" class="ui-btn-left gn-history">история</a>-->
+        <h3 id="title">SMS sender</h3>
+    </div>
+    <div data-role="content">
+
+        <a id="btnTestSMS" data-role="button" href="#" data-icon="plus" data-iconpos="left" class="gn-submit">
+            отправить SMS
+        </a>
+
+        <div id="log"></div>
+
+    </div>
+</div>
+
+<!-- Settings -->
+<div data-role="page" id="settingsPage" data-theme="a">
+    <div data-role="header">
+
+        <a data-role="button" href="#mainPage" class="ui-btn-left gn-history">назад</a>
+
+        <h3>Настройки</h3>
+    </div>
+    <div data-role="content">
+
+        <label for="round" class="ui-select">Круг:</label>
+        <select id="round" name="">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+
+        <label for="mode" class="ui-select">Режим:</label>
+        <select id="mode" name="">
+            <option value="s" selected>Старт</option>
+            <option value="f">Финиш</option>
+            <option value="kin">КВ вход</option>
+            <option value="kout">КВ выход</option>
+        </select>
+
+
+    </div>
+</div>
+</body>
+</html>
