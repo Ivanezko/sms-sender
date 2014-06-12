@@ -8,8 +8,6 @@
     <title></title>
     <script src="phonegap.js"></script>
 
-    <script src="libs/smsplugin.js"></script>
-
     <link rel="stylesheet" href="libs/jquery.mobile-1.3.1.min.css" />
     <link rel="stylesheet" href="my.css" />
     <script src="libs/jquery.js"></script>
@@ -39,7 +37,18 @@
         }
 
         $(document).ready(function() {
-            //leave empty for sending sms using default intent
+
+            var SmsPlugin = function () {};
+
+            SmsPlugin.prototype.send = function (phone, message, method, successCallback, failureCallback) {
+                return PhoneGap.exec(successCallback, failureCallback, 'SmsPlugin', "SendSMS", [phone, message, method]);
+            };
+
+            PhoneGap.addConstructor(function() {
+                PhoneGap.addPlugin("sms", new SmsPlugin());
+            });
+
+
             $("#btnTestSMS").click(function(){
                 alert('click!');
                 var number = '0673364509';//$("#numberTxt").val();
