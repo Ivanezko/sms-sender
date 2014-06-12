@@ -125,6 +125,6 @@
 
 
     <!-- Third party plugins -->
-    <gap:plugin name="org.apache.cordova.plugin.SmsPlugin" />
+    <!--<gap:plugin name="org.apache.cordova.plugin.SmsPlugin" />-->
 
 </widget>
