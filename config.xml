@@ -125,6 +125,6 @@
 
 
     <!-- Third party plugins -->
-    <gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.0" />
+    <gap:plugin name="info.ivanezko.phonegap.smsplugin"/>
 
 </widget>
