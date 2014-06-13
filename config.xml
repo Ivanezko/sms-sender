@@ -95,7 +95,7 @@
     </feature>-->
 
     <feature name="SmsPlugin">
-        <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
+        <param name="android-package" value="info.ivanezko.phonegap.smsplugin.SmsPlugin"/>
     </feature>
 
 
