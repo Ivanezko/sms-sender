@@ -96,6 +96,7 @@
 
     <feature name="SmsPlugin">
         <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
+        <param name="onload" value="true" />
     </feature>
 
 
