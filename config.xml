@@ -124,7 +124,7 @@
 
 
     <!-- Third party plugins -->
-    <gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1"/>
+    <!--<gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1"/>-->
 
     <access origin="*" />
 
