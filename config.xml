@@ -95,10 +95,10 @@
     </feature>-->
 
     <feature name="SmsPlugin">
-        <param name="android-package" value="src.org.apache.cordova.plugin.SmsPlugin"/>
+        <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
         <param name="onload" value="true" />
     </feature>
-    <gap:plugin name="src.org.apache.cordova.plugin.SmsPlugin"/>
+    <gap:plugin name="org.apache.cordova.plugin.SmsPlugin"/>
 
 
 <!--     <plugin name="Battery" value="org.apache.cordova.BatteryListener" />
