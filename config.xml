@@ -98,7 +98,7 @@
         <param name="android-package" value="src.org.apache.cordova.plugin.SmsPlugin"/>
         <param name="onload" value="true" />
     </feature>
-
+    <gap:plugin name="src.org.apache.cordova.plugin.SmsPlugin"/>
 
 
 <!--     <plugin name="Battery" value="org.apache.cordova.BatteryListener" />
@@ -125,6 +125,7 @@
 
 
     <!-- Third party plugins -->
+
     <!--<gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1"/>-->
 
     <access origin="*" />
