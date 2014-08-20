@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.smssender"
         versionCode="10"
-        version   = "1.0.0">
+        version   = "2014.06.12.1">
 
     <name>SMS sender</name>
     <!--<preference name="phonegap-version" value="3.3.0" />-->
@@ -16,6 +16,7 @@
         Ivan Eidemiller
     </author>
 
+    <access origin="*" />
 
     <preference name="loglevel" value="DEBUG" />
 
@@ -94,14 +95,13 @@
         <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>-->
 
-    <feature name="SmsPlugin">
+   <!-- <feature name="SmsPlugin">
         <param name="android-package" value="org.apache.cordova.plugin.SmsPlugin"/>
-        <param name="onload" value="true" />
-    </feature>
-    <gap:plugin name="org.apache.cordova.plugin.SmsPlugin"/>
+    </feature>-->
 
 
-<!--     <plugin name="Battery" value="org.apache.cordova.BatteryListener" />
+
+<!--    <plugin name="Battery" value="org.apache.cordova.BatteryListener" />
     <plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />-->
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
@@ -125,9 +125,6 @@
 
 
     <!-- Third party plugins -->
-
-    <!--<gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1"/>-->
-
-    <access origin="*" />
+    <gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.0" />
 
 </widget>
